@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SeriesComponent } from './components/series/series.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ErrorComponent } from './components/error/error.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'series', component: SeriesComponent },
   { path: 'navbar', component: NavbarComponent },
   { path: 'footer', component: FooterComponent },
+  { path: '**', component: ErrorComponent },
 ];
 
 @NgModule({

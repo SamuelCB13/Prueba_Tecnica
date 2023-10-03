@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { SeriesComponent } from './components/series/series.component';
 import { FilmsComponent } from './components/films/films.component';
+import { ErrorComponent } from './components/error/error.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { FilmsComponent } from './components/films/films.component';
     FooterComponent,
     HomeComponent,
     SeriesComponent,
-    FilmsComponent
+    FilmsComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
