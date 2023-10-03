@@ -1,11 +1,11 @@
 nav{
     display: flex;
     align-items: center;
-    width: 100%;
     justify-content: space-around;
     background-color: dodgerblue;
     padding: 30px;
     height: 40px;
+    margin: 0;
 }
 
 .navbar a{
